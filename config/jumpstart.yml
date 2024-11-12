@@ -1,0 +1,24 @@
+---
+application_name: challenger_app
+business_name: torelli.dev
+business_address: |-
+  216 W Marietta Street
+  Canton GA, 30144
+domain: torelli.dev
+support_email: support@torelli.dev
+default_from_email: no-reply@torelli.dev
+background_job_processor: sidekiq
+email_provider: sendgrid
+personal_accounts: true
+apns: false
+fcm: false
+integrations:
+omniauth_providers:
+- google-oauth2
+payment_processors:
+- stripe
+multitenancy:
+- subdomain
+gems:
+- oj
+- whenever
